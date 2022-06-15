@@ -5,6 +5,7 @@ body {
 h1 {
     color: #025157;
     text-align: center;
+    font-family: Fascinate;
 }
 
 p {
@@ -16,4 +17,70 @@ p {
 button {
     color: #fff;
     background-color: #025157;
+}
+
+.header {
+    /*margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;*/
+    margin: 40px 20px 0 20px;
+    font-size: 0;
+}
+
+li {
+    display: inline;
+    margin: 0 25px;
+}
+
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo > img {
+    width: 15%;
+}
+  
+.navbar {
+    width: 70%;
+    text-align: left;
+    color: #025157;
+    font-weight: 500;
+    font-family: Fascinate;
+}
+  
+.actions {
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actions > * {
+    margin: 0 10px;
+}
+
+.actions a {
+    color: #67b54b;
+    text-decoration: none;
+}
+
+.actions button {
+    color: #fff;
+    background-color: #67b54b;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 14px;
+}
+
+.main {
+    margin-top: 140px;
+    text-align: center;
 }
