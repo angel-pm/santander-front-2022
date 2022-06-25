@@ -3,9 +3,10 @@ body {
 }
 
 h1 {
+    font-size: 60px;
     color: #025157;
     text-align: center;
-    font-family: Fascinate;
+    font-family: 'Alegreya', serif;
 }
 
 p {
@@ -25,6 +26,7 @@ button {
     margin-right: 20px;*/
     margin: 40px 20px 0 20px;
     font-size: 0;
+    font-family: sans-serif;
 }
 
 .fixed-header{
@@ -37,7 +39,7 @@ button {
 
 li {
     display: inline;
-    margin: 0 25px;
+    margin: 0 25px 0;
 }
 
 .header > * {
@@ -58,10 +60,10 @@ li {
   
 .navbar {
     width: 70%;
-    text-align: left;
+    text-align: center;/*left;*/
     color: #025157;
     font-weight: 500;
-    font-family: Fascinate;
+    font-family: sans-serif;
 }
   
 .actions {
@@ -83,7 +85,7 @@ li {
 .actions button {
     color: #fff;
     background-color: #67b54b;
-    border: none;
+    border: 0;/*none;*/
     border-radius: 5px;
     padding: 12px 14px;
 }
@@ -98,8 +100,27 @@ li {
     margin-left: 30px;
 }
 
+.publicidad h1 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+}
+
 .publicidad p {
+    font-size: 16px;
     color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publicidad > form {
+    display: flex;
+}
+
+.publicidad > form p {
+    color: #025157;
+    margin-right: 18px;
 }
 
 .promo {
@@ -130,6 +151,7 @@ li {
     grid-template: repeat(2, 1fr)/repeat(2, 1fr);
     height: 660px;
     background-color: #025157;
+    height: 100%;
 }
 
 .feature-card {
@@ -185,7 +207,77 @@ li {
     height: 80%;
 }
 
-.feature-image img {
+.features .feature-card .feature-image figure,
+.features .feature-card .feature-image img {
   margin-top: 0;
   height: 100%;
+}
+
+/* dispositivos pequeños en vista viewport (vertical)*/
+@media (max-width: 575px) {
+    /*.navbar, .actions {
+        display: none;
+    }*/
+    h1 {
+        font-size: 30px;
+    }
+    .main {
+        margin-top: 130px;
+    }
+    .banner > img{
+        width: 100%;
+    }
+    .publicidad > form {
+        flex-direction: column;
+    }
+    .publicidad > form > div {
+        height: 50px;
+        margin-top: 10px;
+    }
+    .publicidad > form > div > input {
+        width: 65%;
+    }
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .video > video {
+        width: 100%;
+    }
+    .publicidad {
+        margin-top: 10px;
+    }
+    .publicidad > h1 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    .features {
+        grid-template: repeat(4, 1fr)/1fr;
+        padding-left: 0;
+        padding-right: 0;
+        height: 100%;
+    }
+    .feature-image {
+        display: none;
+    }
+}
+
+/* disp. pequeños en vista landscape (horizontal)*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+  
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+  
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+  
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+    
 }
